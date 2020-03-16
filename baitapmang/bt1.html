@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Viết chương trình tạo ra một mảng số nguyên M gồm 10 phần tử được sinh ngẫu nhiên từ 20 đến 30. 
+Sau đó yêu cầu người dùng nhập vào một giá trị n, hiển thị lên màn hình mảng M và thông báo "n có xuất hiện 
+trong mảng M" nếu n xuất hiện trong mảng M, ngược lại thông báo "n không xuất hiện trong mảng M". -->
+
+<body>
+    <script>
+        let m = Array();
+        let n = Math.floor(Math.random()* 10 + 20);
+        for (let i = 0; i < 10; i++) {
+            m[i] = Math.floor(Math.random() * 10 + 20);
+          
+        }
+        let thongbao="";
+        for (let j = 0; j < 10; j++) {
+            if (n == m[j]) {
+                thongbao = "có xuất hiện trong mảng m";
+                break;
+            }
+            else
+            thongbao = "không xuất hiện trong mảng m";
+        }
+        document.write(m + "<br>")
+        document.write("n = " + n + " " +thongbao)
+        
+    </script>
+</body>
+
+</html>
